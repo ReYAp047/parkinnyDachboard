@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, LineSeries, Category, Legend, DataLabel, Tooltip } from '@syncfusion/ej2-react-charts';
 
 // import { lineCustomSeries, LinePrimaryXAxis, LinePrimaryYAxis } from '../../data/dummy';
@@ -8,7 +8,6 @@ import { useStateContext } from '../../contexts/ContextProvider';
 
 const LineChart = () => {
   const { currentMode } = useStateContext();
-
   return (
     <ChartComponent
       primaryXAxis={{ valueType: 'Category', title: 'Mois' }}
